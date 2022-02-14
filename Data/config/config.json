@@ -1,0 +1,777 @@
+{
+    "Font": {
+        "base": "Data/police/apocalypse.otf"
+    },
+    "Settings": {
+        "WIDTH": 1024,
+        "HEIGHT": 768
+    },
+    "Player": {
+        "hp": 100,
+        "speed_x": 8,
+        "speed_y": 0.1,
+        "gravity": 10,
+        "jumpForce": 8,
+        "width": 80,
+        "height": 212,
+        "animations": [
+            {
+                "name": "fastrun",
+                "path": "Data/sprites/player/fastrun/",
+                "lenght": 32
+            },
+            {
+                "name": "jump",
+                "path": "Data/sprites/player/jump/",
+                "lenght": 18
+            },
+            {
+                "name": "jumploop",
+                "path": "Data/sprites/player/jumploop/",
+                "lenght": 64
+            },
+            {
+                "name": "landing",
+                "path": "Data/sprites/player/landing/",
+                "lenght": 12
+            },
+            {
+                "name": "idle",
+                "path": "Data/sprites/player/idle/",
+                "lenght": 20
+            },
+            {
+                "name": "runtostop",
+                "path": "Data/sprites/player/runtostop/",
+                "lenght": 52
+            },
+            {
+                "name": "turn",
+                "path": "Data/sprites/player/turn/",
+                "lenght": 45
+            },
+            {
+                "name": "turn_run",
+                "path": "Data/sprites/player/turn_run/",
+                "lenght": 40
+            },
+            {
+                "name": "pick_up",
+                "path": "Data/sprites/player/pick_up/",
+                "lenght": 40
+            },
+            {
+                "name": "hard_landing",
+                "path": "Data/sprites/player/hard_landing/",
+                "lenght": 100
+            },
+            {
+                "name": "roll",
+                "path": "Data/sprites/player/roll/",
+                "lenght": 88
+            },
+            {
+                "name": "hit_wall",
+                "path": "Data/sprites/player/hit_wall/",
+                "lenght": 26
+            },
+            {
+                "name": "jump_ride",
+                "path": "Data/sprites/player/jump_ride/",
+                "lenght": 71
+            },
+            {
+                "name": "slide",
+                "path": "Data/sprites/player/slide/",
+                "lenght": 75
+            }
+        ]
+    },
+    "Monster": {
+        "hp": 100,
+        "speed_x": 8,
+        "speed_y": 0.1,
+        "gravity": 10,
+        "jumpForce": 10,
+        "width": 80,
+        "height": 212,
+        "animations": [
+            {
+                "name": "groar",
+                "path": "Data/sprites/monster/roaring/",
+                "lenght": 296
+            },
+            {
+                "name": "run",
+                "path": "Data/sprites/monster/run/",
+                "lenght": 53
+            },
+            {
+                "name": "jumploop",
+                "path": "Data/sprites/monster/jumploop/",
+                "lenght": 41
+            }
+        ]
+    },
+    "Decors": [
+        {
+            "name": "ground_1",
+            "height": 512,
+            "width": 512,
+            "img": "Data/sprites/grounds/ground_1.png",
+            "animation": "None"
+        },
+        {
+            "name": "moon",
+            "height": 5000,
+            "width": 4567,
+            "img": "Data/sprites/background/moon.png",
+            "animation": "None"
+        },
+        {
+            "name": "sunset",
+            "height": 1600,
+            "width": 1200,
+            "img": "Data/sprites/background/sunset.png",
+            "animation": "None"
+        },
+        {
+            "name": "sol_egout1",
+            "height": 192,
+            "width": 1024,
+            "img": "Data/sprites/background/egout_bot2.png",
+            "animation": "None"
+        },
+        {
+            "name": "foret_jour",
+            "height": 1200,
+            "width": 1200,
+            "img": "Data/sprites/background/jungle_jour.png",
+            "animation": "None"
+        },
+        {
+            "name": "foret_nuit",
+            "height": 1200,
+            "width": 1200,
+            "img": "Data/sprites/background/jungle_nuit.png",
+            "animation": "None"
+        },
+        {
+            "name": "ville_jour",
+            "height": 1200,
+            "width": 1200,
+            "img": "Data/sprites/background/ville_jour_top.png",
+            "animation": "None"
+        },
+        {
+            "name": "ville_nuit",
+            "height": 1200,
+            "width": 1200,
+            "img": "Data/sprites/background/ville_nuit_top.png",
+            "animation": "None"
+        },
+        {
+            "name": "souche",
+            "height": 910,
+            "width": 764,
+            "img": "Data/sprites/obstacles/souche.png",
+            "animation": "None"
+        },
+        {
+            "name": "pneu",
+            "height": 2116,
+            "width": 1625,
+            "img": "Data/sprites/obstacles/pneu.png",
+            "animation": "None"
+        },
+        {
+            "name": "tree1",
+            "height": 449,
+            "width": 854,
+            "img": "Data/sprites/decors/tree1.png",
+            "animation": "None"
+        },
+        {
+            "name": "tree1_n",
+            "height": 449,
+            "width": 854,
+            "img": "Data/sprites/decors/tree1_n.png",
+            "animation": "None"
+        },
+        {
+            "name": "grue",
+            "height": 449,
+            "width": 854,
+            "img": "Data/sprites/decors/grue.png",
+            "animation": "None"
+        },
+        {
+            "name": "house",
+            "height": 1080,
+            "width": 739,
+            "img": "Data/sprites/items/house_run.png",
+            "animation": "None"
+        },
+        {
+            "name": "day",
+            "height": 1295,
+            "width": 500,
+            "img": "Data/sprites/background/sunset.png",
+            "animation": "None"
+        },
+        {
+            "name": "night",
+            "height": 5000,
+            "width": 4567,
+            "img": "Data/sprites/background/moon.png",
+            "animation": "None"
+        },
+        {
+            "name": "bus",
+            "height": 500,
+            "width": 250,
+            "img": "Data/sprites/decors/bus.png",
+            "animation": "None"
+        },
+        {
+            "name": "rocher",
+            "height": 120,
+            "width": 250,
+            "img": "Data/sprites/decors/rocher.png",
+            "animation": "None"
+        },
+        {
+            "name": "money",
+            "height": 308,
+            "width": 500,
+            "img": "Data/sprites/items/money.png",
+            "animation": "None"
+        }
+    ],
+    "Bindings": {
+        "jump": 32,
+        "right": 100,
+        "left": 113,
+        "roll": 1073741905,
+        "pause": 27
+    },
+    "Background_images": {
+        "mainMenu": "Data/sprites/background/MenuBg.png",
+        "gameMenu": "Data/sprites/background/egout_top.png",
+        "sunset": "Data/sprites/background/sunset.png",
+        "moon": "Data/sprites/background/moon.png",
+        "villeNuitTop": "Data/sprites/background/ville_nuit_top.png",
+        "villeNuitBot": "Data/sprites/background/ville_nuit_bot.png",
+        "villeJourTop": "Data/sprites/background/ville_jour_top.png",
+        "villeJourBot": "Data/sprites/background/ville_jour_bot.png",
+        "egoutTop": "Data/sprites/background/egout_top.png",
+        "egoutBot": "Data/sprites/background/egout_bot.png",
+        "planque": "Data/sprites/background/house.png",
+        "jungle_jour": "Data/sprites/background/jungle_jour.png",
+        "jungle_nuit": "Data/sprites/background/jungle_nuit.png",
+        "armoire": "Data/sprites/planque/armoireProche.png",
+        "gameOver": "Data/sprites/background/gameOver.png"
+    },
+    "Images": {
+        "logo": "Data/sprites/logoWC.png"
+    },
+    "Items": {
+        "credits": {
+            "img": "Data/sprites/Menu/credits.png",
+            "HEIGHT": 1024,
+            "WIDTH": 768
+        },
+        "regle": {
+            "img": "Data/sprites/Menu/regle.png",
+            "HEIGHT": 1024,
+            "WIDTH": 768
+        },
+        "papier": {
+            "img": "Data/sprites/items/paper.png",
+            "HEIGHT": 392,
+            "WIDTH": 270
+        },
+        "panneau_menu_commencer": {
+            "img": "Data/sprites/items/pancarte_menu_commencer.png",
+            "HEIGHT": 540,
+            "WIDTH": 482
+        },
+        "panneau_menu_touches": {
+            "img": "Data/sprites/items/pancarte_menu_touches.png",
+            "HEIGHT": 575,
+            "WIDTH": 464
+        },
+        "panneau_menu_regles": {
+            "img": "Data/sprites/items/pancarte_menu_regles.png",
+            "HEIGHT": 540,
+            "WIDTH": 482
+        },
+        "panneau_menu_quitter": {
+            "img": "Data/sprites/items/pancarte_menu_quitter.png",
+            "HEIGHT": 575,
+            "WIDTH": 464
+        },
+        "crafting_table": {
+            "img": "Data/sprites/items/crafting_table.png",
+            "HEIGHT": 200,
+            "WIDTH": 612
+        },
+        "panneau_menu_commencer_hover": {
+            "img": "Data/sprites/items/pancarte_menu_commencer_hover.png",
+            "HEIGHT": 540,
+            "WIDTH": 482
+        },
+        "panneau_menu_touches_hover": {
+            "img": "Data/sprites/items/pancarte_menu_touches_hover.png",
+            "HEIGHT": 575,
+            "WIDTH": 464
+        },
+        "panneau_menu_regles_hover": {
+            "img": "Data/sprites/items/pancarte_menu_regles_hover.png",
+            "HEIGHT": 540,
+            "WIDTH": 482
+        },
+        "passer_la_nuit": {
+            "img": "Data/sprites/items/passer_la_nuit.png",
+            "HEIGHT": 384,
+            "WIDTH": 512
+        },
+        "passer_la_nuit_oui": {
+            "img": "Data/sprites/items/passer_la_nuit_oui.png",
+            "HEIGHT": 384,
+            "WIDTH": 512
+        },
+        "passer_la_nuit_non": {
+            "img": "Data/sprites/items/passer_la_nuit_non.png",
+            "HEIGHT": 384,
+            "WIDTH": 512
+        },
+        "panneau_menu_quitter_hover": {
+            "img": "Data/sprites/items/pancarte_menu_quitter_hover.png",
+            "HEIGHT": 384,
+            "WIDTH": 512
+        },
+        "BaignoireHUD": {
+            "img": "Data/sprites/items/baignoire.png",
+            "HEIGHT": 576,
+            "WIDTH": 768
+        },
+        "BibliotequeHUD": {
+            "img": "Data/sprites/items/bibliotheque.png",
+            "HEIGHT": 768,
+            "WIDTH": 1024
+        },
+        "Money": {
+            "img": "Data/sprites/items/money.png",
+            "HEIGHT": 50,
+            "WIDTH": 60
+        },
+        "Stats_planche": {
+            "img": "Data/sprites/items/stats_planche.png",
+            "HEIGHT": 50,
+            "WIDTH": 60
+        },
+        "Recette_Tomate": {
+            "img": "Data/sprites/recette/Tomate.png"
+        },
+        "Recette_Salade": {
+            "img": "Data/sprites/recette/Salade.png"
+        },
+        "Recette_Pain": {
+            "img": "Data/sprites/recette/Pain.png"
+        },
+        "Recette_Patate": {
+            "img": "Data/sprites/recette/Patate.png"
+        },
+        "Recette_Champignon": {
+            "img": "Data/sprites/recette/Champignon.png"
+        },
+        "Recette_Viande": {
+            "img": "Data/sprites/recette/Viande.png"
+        },
+        "Recette_Comcombre": {
+            "img": "Data/sprites/recette/Comcombre.png"
+        },
+        "Recette_Sucre": {
+            "img": "Data/sprites/recette/Sucre.png"
+        },
+        "Recette_Saumon": {
+            "img": "Data/sprites/recette/Saumon.png"
+        },
+        "Recette_Caviar": {
+            "img": "Data/sprites/recette/Caviar.png"
+        }
+    },
+    "Sounds": {
+        "paper": "Data/sounds/paperSound.mp3",
+        "run": "Data/sounds/Pas_sur_beton.mp3",
+        "jumpProot": "Data/sounds/jumpProot.mp3",
+        "jump": "Data/sounds/jump.mp3",
+        "fall": "Data/sounds/tomber.mp3",
+        "walf": "Data/sounds/wolf.mp3",
+        "groar": "Data/sounds/groar.mp3",
+        "wolf": "Data/sounds/wolf.mp3",
+        "death": "Data/sounds/death.mp3",
+        "eating": "Data/sounds/eating.mp3",
+        "crash": "Data/sounds/crash.mp3"
+    },
+    "Music": {
+        "nightMusic": "Data/music/nightMusic.mp3",
+        "dayMusic": "Data/music/dayMusic.mp3",
+        "menu": "Data/music/menuMusic.mp3",
+        "house": "Data/music/elevator.mp3"
+    },
+    "Planque_boutons": {
+        "cuisine": {
+            "img": "Data/sprites/planque/cuisine.png",
+            "x": 312,
+            "y": 208,
+            "height": 166,
+            "width": 198
+        },
+        "douche": {
+            "img": "Data/sprites/planque/douche.png",
+            "x": 474,
+            "y": 27,
+            "height": 164,
+            "width": 181
+        },
+        "lit": {
+            "img": "Data/sprites/planque/lit.png",
+            "x": 465,
+            "y": 485,
+            "height": 68,
+            "width": 142
+        },
+        "armoire": {
+            "img": "Data/sprites/planque/armoire.png",
+            "x": 660,
+            "y": 410,
+            "height": 145,
+            "width": 81
+        },
+        "biblioteque": {
+            "img": "Data/sprites/planque/biblioteque.png",
+            "x": 320,
+            "y": 615,
+            "height": 125,
+            "width": 70
+        }
+    },
+    "Ingredients": {
+        "Tomate": {
+            "score": 100,
+            "rare": 5,
+            "img": "Data/sprites/items/Ingredients/tomate.png",
+            "coef": {
+                "Tomate": 1.2,
+                "Salade": 1.4,
+                "Pain": 1.3,
+                "Comcombre": 1.4,
+                "Viande": 1.2,
+                "Patate": 1.3,
+                "Champignon": 1.4,
+                "Sucre": 3,
+                "Saumon": 3,
+                "Caviar": 5
+            },
+            "width": 50,
+            "height": 50,
+            "bonus": {
+                "type": "speed",
+                "value": 0.01
+            }
+        },
+        "Salade": {
+            "score": 200,
+            "rare": 8,
+            "img": "Data/sprites/items/Ingredients/salade.png",
+            "coef": {
+                "Tomate": 1.4,
+                "Salade": 1.3,
+                "Pain": 1.2,
+                "Comcombre": 1.4,
+                "Viande": 1.2,
+                "Patate": 1.6,
+                "Champignon": 2.5,
+                "Sucre": 4,
+                "Saumon": 5,
+                "Caviar": 5
+            },
+            "width": 50,
+            "height": 50,
+            "bonus": {
+                "type": "speed",
+                "value": 0.02
+            }
+        },
+        "Pain": {
+            "score": 300,
+            "rare": 10,
+            "img": "Data/sprites/items/Ingredients/pain.png",
+            "coef": {
+                "Tomate": 1.1,
+                "Salade": 1.2,
+                "Pain": 1.8,
+                "Comcombre": 1.4,
+                "Viande": 1.6,
+                "Patate": 1.4,
+                "Champignon": 1.6,
+                "Sucre": 3,
+                "Saumon": 5,
+                "Caviar": 6
+            },
+            "width": 50,
+            "height": 50,
+            "bonus": {
+                "type": "speed",
+                "value": 0.025
+            }
+        },
+        "Comcombre": {
+            "score": 300,
+            "rare": 10,
+            "img": "Data/sprites/items/Ingredients/comcombre.png",
+            "coef": {
+                "Tomate": 1.4,
+                "Salade": 1.4,
+                "Pain": 1.4,
+                "Comcombre": 1.2,
+                "Viande": 1.2,
+                "Patate": 1.6,
+                "Champignon": 1.2,
+                "Sucre": 3,
+                "Saumon": 5,
+                "Caviar": 6
+            },
+            "width": 50,
+            "height": 50,
+            "bonus": {
+                "type": "saut",
+                "value": 0.01
+            }
+        },
+        "Viande": {
+            "score": 1000,
+            "rare": 20,
+            "img": "Data/sprites/items/Ingredients/viande.png",
+            "coef": {
+                "Tomate": 1.2,
+                "Salade": 1.2,
+                "Pain": 1.6,
+                "Comcombre": 1.2,
+                "Viande": 1.4,
+                "Patate": 1.6,
+                "Champignon": 1.4,
+                "Sucre": 3,
+                "Saumon": 4,
+                "Caviar": 5
+            },
+            "width": 50,
+            "height": 50,
+            "bonus": {
+                "type": "saut",
+                "value": 0.02
+            }
+        },
+        "Patate": {
+            "score": 800,
+            "rare": 15,
+            "img": "Data/sprites/items/Ingredients/patate.png",
+            "coef": {
+                "Tomate": 1.3,
+                "Salade": 1.6,
+                "Pain": 1.4,
+                "Comcombre": 1.6,
+                "Viande": 1.6,
+                "Patate": 1.5,
+                "Champignon": 1.4,
+                "Sucre": 3,
+                "Saumon": 5,
+                "Caviar": 5
+            },
+            "width": 50,
+            "height": 50,
+            "bonus": {
+                "type": "ralentissement",
+                "value": 0.015
+            }
+        },
+        "Champignon": {
+            "score": 500,
+            "rare": 13,
+            "img": "Data/sprites/items/Ingredients/champignon.png",
+            "coef": {
+                "Tomate": 1.4,
+                "Salade": 2.5,
+                "Pain": 1.6,
+                "Comcombre": 1.2,
+                "Viande": 1.4,
+                "Patate": 1.4,
+                "Champignon": 1.8,
+                "Sucre": 3,
+                "Saumon": 4,
+                "Caviar": 5
+            },
+            "width": 50,
+            "height": 50,
+            "bonus": {
+                "type": "ralentissement",
+                "value": 0.01
+            }
+        },
+        "Sucre": {
+            "score": 8000,
+            "rare": 50,
+            "img": "Data/sprites/items/Ingredients/sucre.png",
+            "coef": {
+                "Tomate": 2,
+                "Salade": 2,
+                "Pain": 2,
+                "Comcombre": 2,
+                "Viande": 2,
+                "Patate": 2,
+                "Champignon": 2,
+                "Sucre": 2,
+                "Saumon": 3,
+                "Caviar": 2
+            },
+            "width": 50,
+            "height": 50,
+            "bonus": {
+                "type": "ralentissement",
+                "value": 0.05
+            }
+        },
+        "Saumon": {
+            "score": 10000,
+            "rare": 70,
+            "img": "Data/sprites/items/Ingredients/saumon.png",
+            "coef": {
+                "Tomate": 3,
+                "Salade": 3,
+                "Pain": 3,
+                "Comcombre": 3,
+                "Viande": 3,
+                "Patate": 3,
+                "Champignon": 3,
+                "Sucre": 3,
+                "Saumon": 3,
+                "Caviar": 3
+            },
+            "width": 50,
+            "height": 50,
+            "bonus": {
+                "type": "saut",
+                "value": 0.05
+            }
+        },
+        "Caviar": {
+            "score": 50000,
+            "rare": 100,
+            "img": "Data/sprites/items/Ingredients/caviar.png",
+            "coef": {
+                "Tomate": 4,
+                "Salade": 4,
+                "Pain": 4,
+                "Comcombre": 4,
+                "Viande": 4,
+                "Patate": 4,
+                "Champignon": 4,
+                "Sucre": 4,
+                "Saumon": 4,
+                "Caviar": 1
+            },
+            "width": 50,
+            "height": 50,
+            "bonus": {
+                "type": "speed",
+                "value": 0.08
+            }
+        }
+    },
+    "Recettes": {
+        "Burger": {
+            "1": "Pain",
+            "2": "Salade",
+            "3": "Viande",
+            "bonus": {
+                "type": "speed",
+                "value": 0.1
+            }
+        },
+        "Salade Compose": {
+            "1": "Salade",
+            "2": "Tomate",
+            "3": "Comcombre",
+            "bonus": {
+                "type": "ralentissement",
+                "value": 0.12
+            }
+        },
+        "Tacos": {
+            "1": "Pain",
+            "2": "Tomate",
+            "3": "Viande",
+            "bonus": {
+                "type": "saut",
+                "value": 0.14
+            }
+        },
+        "Pizza": {
+            "1": "Pain",
+            "2": "Tomate",
+            "3": "Champignon",
+            "bonus": {
+                "type": "speed",
+                "value": 0.13
+            }
+        },
+        "Hachis parmentier": {
+            "1": "Patate",
+            "2": "Viande",
+            "3": "Champignon",
+            "bonus": {
+                "type": "ralentissement",
+                "value": 0.2
+            }
+        }
+    },
+    "Plats": {
+        "Burger": {
+            "img": "Data/sprites/items/Ingredients/burger.png",
+            "width": 50,
+            "height": 50
+        },
+        "Salade Compose": {
+            "img": "Data/sprites/items/Ingredients/salade_compose.png",
+            "width": 50,
+            "height": 50
+        },
+        "Champignon hallucinogene": {
+            "img": "Data/sprites/items/Ingredients/champignon.png",
+            "width": 50,
+            "height": 50
+        },
+        "Tacos": {
+            "img": "Data/sprites/items/Ingredients/tacos.png",
+            "width": 75,
+            "height": 75
+        },
+        "Pizza": {
+            "img": "Data/sprites/items/Ingredients/pizza.png",
+            "width": 50,
+            "height": 50
+        },
+        "Hachis parmentier": {
+            "img": "Data/sprites/items/Ingredients/hachis.png",
+            "width": 50,
+            "height": 50
+        },
+        "Soupe": {
+            "img": "Data/sprites/items/Ingredients/soupe.png",
+            "width": 75,
+            "height": 75
+        }
+    }
+}
